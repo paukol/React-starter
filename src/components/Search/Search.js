@@ -4,14 +4,14 @@ import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 import { settings } from '../../data/dataStore';
 import Icon from '../Icon/Icon';
-import Container from '../Container/Container';
+import Container from '../Container/Container.js';
 import {withRouter} from 'react-router';
+
 
 class Search extends React.Component {
   static propTypes = {
     text: PropTypes.string,
     searchString: PropTypes.string,
-    changeSearchString: PropTypes.func,
     countVisible: PropTypes.number,
     countAll: PropTypes.number,
     history: PropTypes.object,
@@ -50,7 +50,7 @@ class Search extends React.Component {
       <Container>
         <div className={styles.component}>
           <input
-            type='text's
+            type='text'
             placeholder={text}
             value={value}
             onChange={event => this.handleChange(event)}
