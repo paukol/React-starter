@@ -20,7 +20,7 @@ const App = () => (
       >
         <Route exact path='/' component={Home} />
         <Route exact path='/info' component={Info} />
-        <Route exct path='/faq' component={FAQ} />
+        <Route excat path='/faq' component={FAQ} />
         <Route exact path="/list/:id" component={List} />
         <Route exact path="/search/:searchString" component={SearchResults} />
       </AnimatedSwitch>
